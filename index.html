@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Landing Page</title>
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -11,7 +13,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <script src="js/script.js"></script>
     </head>
     <body>
         <!--header start-->
@@ -45,7 +46,7 @@
         <main>
         <section class="home-services">
             <h2>Services</h2>
-            <!-- <img src="img/Shape 1 copy.png" alt=""> -->
+            
             <p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
             <div class="service-container">
             <li class="services_li">
@@ -76,8 +77,8 @@
 
         <!--About us start-->
         <section class="home-about">
-            <h2>ABOUT US</h2>
-            <!-- <img src="img/Shape 1 copy.png" alt=""> -->
+            <h2>ABOUT US</h2> <br>
+            <img src="img/Shape 1 copy.png" alt="" style="position: relative;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</p>
             <div class="about-container">
                 <li class="about_li">
@@ -114,7 +115,8 @@
 
         <!--Latest works start-->
         <section class="works">
-            <h2>LATEST WORKS</h2>
+            <h2>LATEST WORKS</h2> <br>
+            <img src="img/Shape 1 copy.png" alt="" style="position: relative;">
             <ul class="works-ul">
                 <li><a href="#"></a>All</li>
                 <li><a href="#"></a>Branding</li>
@@ -123,25 +125,55 @@
                 <li><a href="#"></a>Strategy</li>
             </ul>
         </section>
+
         <section class="row">
             <div class="column">
-                <img src="img/Layer 18.png" alt="">
+
+                <div class="hover">
+                <img src="img/Layer 18.png" alt="" class="image">
+                </div>
+                
+                    <div class="normal" style="background: #c02f1c9c; height: 100%;">
+                        <div class="texta" style="position: relative; top: 80px; color: #fff; letter-spacing: 2px;"> Hair Dresser
+                        <p style="color: #fff">Branding</p>
+                        <button style="background: #fff; color: #c0301c; border: 2px solid #fff; padding: 15px 30px; cursor: pointer;">VIEW ></button>
+                        </div>
+                    </div>
+                    
             </div>
+
             <div class="column">
-                <img src="img/Layer 1o9.png" alt="">
+
+                <div class="hover">
+                <img src="img/Layer 1o9.png" alt="" class="image">
             </div>
+            <div class="normal" style="background: #c02f1c9c; height: 100%;">
+                <div class="texta" style="position: relative; top: 80px; color: #fff; letter-spacing: 2px;"> Interior Design
+                <p style="color: #fff">Branding</p>
+                <button style="background: #fff; color: #c0301c; border: 2px solid #fff; padding: 15px 30px; cursor: pointer;">VIEW ></button>
+                </div>
+            </div>
+            </div>
+
+            
             <div class="column">
+                
                 <img src="img/Layer 20.png" alt="">
             </div>
+           
             <div class="column">
                 <img src="img/Layer1 21.png" alt="">
             </div>
+
             <div class="column">
                 <img src="img/Layer 19.png" alt="">
             </div>
             <div class="column">
                 <img src="img/Layer 23.png" alt="">
             </div>
+        
+
+        
             <div class="column">
                 <img src="img/Layer 25.png" alt="">
             </div>
@@ -152,6 +184,7 @@
                 <img src="img/Layer 24.png" alt="">
             </div>
         </section>
+        
     </main>
         <!--Latest works end-->
 
@@ -168,6 +201,10 @@
         <!--Get in touch end-->
 
         <!--Blog start-->
+
+        <section class="blog-container">
+            <h2 style="color: rgb(63, 62, 62); padding-bottom: 80px; position: relative;">LATEST WORKS</h2>
+        
         <div class="blog_card1">
 
             <div class="profile-main">
@@ -192,10 +229,11 @@
             </div>
         </div>    
         </div>
+    </section>
 
         <!--Blog end-->
 
-        <!--Bramds -->
+        <!--Brands -->
         <section class="brands-container">
             <ul class="brands-ul">
                 <li><a href="#" style="font-family:'Roboto', sans-serif; color: rgb(63, 62, 62); text-decoration: none;">DEORHAM</a></li>
@@ -207,29 +245,12 @@
         </section>
 
         <!--Slide-show start-->
-        <div class="slideshow-container"> Slide-show
-
-            <div class="mySlides fade">
-                <div class="numbertext">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="owl-carousel owl-theme">
+            <div class="item" style="font-style: italic;">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
+            <div class="item" style="font-style: italic;">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
+            <div class="item" style="font-style: italic;">Hvaing piaceat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br> Temporibus autem quiubusdam et aut officiis debitis aut rerum</div>
         </div>
 
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
         <!--Slide-show end-->
 
         <!--Contact start-->
@@ -247,13 +268,13 @@
 
                 <div class="left">
                     <ul class="contact-ul">
-                        <li><h3>ADDRESS</h3>
+                        <li><h3><img src="/img/fa-map-marker.png" alt="" style="margin-right: 10px;">ADDRESS</h3>
                         <h5>312, 7the Ave New York <br> NY 101200, United States of America</h5>
                         </li>
-                        <li><h3>HOTLINE(24/7)</h3>
+                        <li><h3><img src="/img/fa-mobile-phone.png" alt="" style="margin-right: 10px;"> HOTLINE(24/7)</h3>
                         <h5>+65 0052 300, +65 88251 210</h5>
                         </li>
-                        <li><h3>E-MAIL</h3>
+                        <li><h3><img src="/img/fa-envelope-o.png" alt="" style="margin-right: 10px;"> E-MAIL</h3>
                         <h5>shapedtheme@gmail.com <br> khalilkocie@gmail.com</h5>
                         </li>
                     </ul>
@@ -283,6 +304,11 @@
                 <li style="margin: .5rem; padding: 10px; display: inline-block; border: 1px solid #fff; border-radius: 50%; cursor: pointer;"> <img src="/img/fa-twitter.png" alt=""> </li>
             </ul>
             <p style="text-align: center; color: white; font-size: 14px; position: relative; top: 80px">© 2015 STARTUP, DESIGNED BY SHAPEDTHEME</p>
+        
+            
         </footer>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>

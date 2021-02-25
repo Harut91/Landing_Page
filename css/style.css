@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-    
     list-style-position: inside;
 }
 body{
@@ -301,11 +300,11 @@ h3{
 }
 
 .row > img{
-    width: 360px;
+    width: 100%;
 }
 
 .row{
-    margin: auto;
+    margin: 0;
     width: 80%;
     justify-content: center;
     display: grid;
@@ -315,10 +314,53 @@ h3{
 }
 
 .column{
-    margin: 5px;
+    margin: 0 auto;
+    width: 70%;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+
+}
+.column:hover .hover{
+    opacity: 0;
+}
+
+.column .normal{
+    transition: .5s ease;
+}
+
+.column:hover .normal{
+    opacity: 1;
+}
+.column .hover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.texta{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.texta:hover{
+
+    opacity: 1;
 }
 
 
+@media (max-width: 600px) {
+    .texta{
+        
+        
+        
+    }
+    
+}
 /* Works end
 ======================= */
 
@@ -454,59 +496,6 @@ h3{
 /* Slide-show start
 ======================= */
 
-.slideshow-container{
-    max-width: 1000px;
-    height: 200px;
-    font-size: 20px;
-    font-style: italic;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides{
-    display: none;
-}
-
-
-.text{
-    color: rgb(82, 79, 79);
-    text-align: center;
-    width: 800px;
-    height: 500px;
-}
-
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(82, 79, 79);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-
-}
-
-.dot:hover{
-    background-color: #c0301c;
-}
-
-.fade{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4;}
-    to {opacity: 1;}
-}
-
-@keyframes fade {
-    from {opacity: .4;}
-    to {opacity: 1;}
-}
 
 /* Slide-show end
 ======================= */
@@ -546,9 +535,9 @@ h3{
 }
 
 .left{
-    position: absolute;
-    top: 0;
-    left: 300px;
+    position: relative;
+    bottom: 150px;
+    left: 50px;
     width: 380px;
     height: 320px;
     color: rgb(82, 79, 79);;
